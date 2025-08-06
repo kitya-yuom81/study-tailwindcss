@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Aspect Ratio Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10 space-y-10">
+
+  <!-- 🔲 1. Square -->
+  <div>
+    <h2 class="text-lg font-semibold mb-2">aspect-square</h2>
+    <div class="aspect-square w-40 bg-red-400 rounded-md shadow-md"></div>
+  </div>
+
+  <!-- 🎬 2. Video -->
+  <div>
+    <h2 class="text-lg font-semibold mb-2">aspect-video (16:9)</h2>
+    <div class="aspect-video w-full max-w-xl bg-black rounded-md shadow-md">
+      <iframe 
+        class="w-full h-full rounded-md"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- 🧊 3. Custom Ratio (3:4) -->
+  <div>
+    <h2 class="text-lg font-semibold mb-2">aspect-[3/4]</h2>
+    <div class="aspect-[3/4] w-40 bg-blue-400 rounded-md shadow-md"></div>
+  </div>
+
+  <!-- ➕ 4. Custom Ratio (4:3) -->
+  <div>
+    <h2 class="text-lg font-semibold mb-2">aspect-[4/3]</h2>
+    <div class="aspect-[4/3] w-60 bg-green-400 rounded-md shadow-md"></div>
+  </div>
+
+  <!-- ❌ 5. aspect-auto (no fixed ratio) -->
+  <div>
+    <h2 class="text-lg font-semibold mb-2">aspect-auto</h2>
+    <div class="aspect-auto w-40 h-24 bg-yellow-400 rounded-md shadow-md"></div>
+  </div>
+
+</body>
+</html>
