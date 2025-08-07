@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Break After Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-6 bg-gray-50 text-gray-800 space-y-10">
+
+    <!-- Example 1: break-after-page (Used in print layout) -->
+    <section class="bg-white p-6 shadow-md break-after-page">
+      <h2 class="text-xl font-bold mb-2">Page 1</h2>
+      <p>This section will break after this block when printed or paged. It starts a new page afterward.</p>
+    </section>
+
+    <section class="bg-white p-6 shadow-md">
+      <h2 class="text-xl font-bold mb-2">Page 2</h2>
+      <p>This is the content that starts on the new page after the break.</p>
+    </section>
+
+    <!-- Example 2: break-after-column (Used in multi-column layout) -->
+    <div class="columns-2 gap-4 bg-blue-50 p-6">
+      <p class="bg-white p-4 shadow break-after-column">
+        This paragraph ends the first column and forces the next content to start in the second column.
+      </p>
+      <p class="bg-white p-4 shadow">
+        This text will start at the top of the next column due to `break-after-column`.
+      </p>
+    </div>
+
+    <!-- Example 3: break-after-avoid -->
+    <div class="bg-white p-6 shadow-md">
+      <h2 class="text-lg font-bold break-after-avoid">Don't break after this heading</h2>
+      <p>This paragraph will try to stay together with the heading. The browser will avoid placing a break between them.</p>
+    </div>
+
+    <!-- Example 4: break-after-left / break-after-right -->
+    <section class="p-6 bg-white shadow-md break-after-left">
+      <h2 class="text-xl font-semibold">Break After Left Page</h2>
+      <p>In print, this section will break and resume on a left-hand page.</p>
+    </section>
+
+    <section class="p-6 bg-white shadow-md break-after-right">
+      <h2 class="text-xl font-semibold">Break After Right Page</h2>
+      <p>This section will break and resume on a right-hand page in print layout.</p>
+    </section>
+
+    <!-- Example 5: break-after-all -->
+    <section class="p-6 bg-white shadow-md break-after-all">
+      <h2 class="text-xl font-semibold">Break After All</h2>
+      <p>Use this when you want to ensure a break after the element in all fragmentation contexts.</p>
+    </section>
+
+  </body>
+</html>

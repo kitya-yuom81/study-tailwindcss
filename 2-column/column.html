@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Columns Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="space-y-10 p-6 bg-white text-gray-900">
+    <!-- Example 1: columns-2 -->
+    <div>
+      <h2 class="text-xl font-bold mb-2">
+        Example 1: columns-2 (Force exactly 2 columns)
+      </h2>
+      <div class="columns-2 gap-4 p-4 bg-gray-100 rounded-md shadow-sm">
+        <p class="bg-blue-200 p-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <p class="bg-green-200 p-2">
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="bg-yellow-200 p-2">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="bg-pink-200 p-2">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+    </div>
+
+    <!-- Example 2: columns-2xl -->
+    <div>
+      <h2 class="text-xl font-bold mb-2">
+        Example 2: columns-2xl (Each column ≈ 672px width)
+      </h2>
+      <div class="columns-2xl gap-6 p-4 bg-gray-100 rounded-md shadow-sm">
+        <p class="bg-blue-200 p-2">
+          This layout will try to fit as many columns as it can, each 672px
+          wide.
+        </p>
+        <p class="bg-green-200 p-2">
+          If your screen is smaller than that, it might just be 1 column.
+        </p>
+        <p class="bg-yellow-200 p-2">
+          But on wider screens, it can create 2 or more columns.
+        </p>
+        <p class="bg-pink-200 p-2">Responsive and clean!</p>
+      </div>
+    </div>
+
+    <!-- Example 3: columns-[300px] -->
+    <div>
+      <h2 class="text-xl font-bold mb-2">
+        Example 3: columns-[300px] (Custom column width)
+      </h2>
+      <div class="columns-[300px] gap-4 p-4 bg-gray-100 rounded-md shadow-sm">
+        <p class="bg-blue-200 p-2">Custom width of 300px per column!</p>
+        <p class="bg-green-200 p-2">
+          This gives you full control over how wide each column is.
+        </p>
+        <p class="bg-yellow-200 p-2">Great for fine-tuned responsive design.</p>
+        <p class="bg-pink-200 p-2">Even works with images and cards.</p>
+      </div>
+    </div>
+
+    <h2 class="text-lg font-bold mb-2">
+      Example: columns-xs (320px per column)
+    </h2>
+    <div class="columns-xs gap-4 p-4 bg-gray-100">
+      <p class="bg-blue-200 p-2">
+        This layout uses <strong>columns-xs</strong>, so each column is about
+        320px wide. The container will fit as many 320px columns as it can.
+      </p>
+      <p class="bg-green-200 p-2">Second block of content</p>
+      <p class="bg-yellow-200 p-2">Third block of content</p>
+      <p class="bg-pink-200 p-2">Fourth block of content</p>
+    </div>
+
+    <h2 class="text-lg font-bold mb-2">
+      Example: columns-sm (384px per column)
+    </h2>
+    <div class="columns-sm gap-4 p-4 bg-gray-100">
+      <p class="bg-blue-200 p-2">
+        This layout uses <strong>columns-sm</strong>, so each column is about
+        384px wide. Slightly wider than `xs` version.
+      </p>
+      <p class="bg-green-200 p-2">Second block of content</p>
+      <p class="bg-yellow-200 p-2">Third block of content</p>
+      <p class="bg-pink-200 p-2">Fourth block of content</p>
+    </div>
+
+    <h2 class="text-lg font-bold mb-2">
+      Example: columns-md (448px per column)
+    </h2>
+    <div class="columns-md gap-4 p-4 bg-gray-100">
+      <p class="bg-blue-200 p-2">
+        This layout uses <strong>columns-md</strong>, so each column is about
+        448px wide — useful for wider paragraphs or images.
+      </p>
+      <p class="bg-green-200 p-2">Second block of content</p>
+      <p class="bg-yellow-200 p-2">Third block of content</p>
+      <p class="bg-pink-200 p-2">Fourth block of content</p>
+    </div>
+
+    <h2 class="text-lg font-bold mb-2">
+      Example: columns-lg (512px per column)
+    </h2>
+    <div class="columns-lg gap-4 p-4 bg-gray-100">
+      <p class="bg-blue-200 p-2">
+        This layout uses <strong>columns-lg</strong>, so each column is about
+        512px wide. Better for large cards or wide text blocks.
+      </p>
+      <p class="bg-green-200 p-2">Second block of content</p>
+      <p class="bg-yellow-200 p-2">Third block of content</p>
+      <p class="bg-pink-200 p-2">Fourth block of content</p>
+    </div>
+
+    <h2 class="text-lg font-bold mb-2">
+      Example: columns-xl (576px per column)
+    </h2>
+    <div class="columns-xl gap-4 p-4 bg-gray-100">
+      <p class="bg-blue-200 p-2">
+        This layout uses <strong>columns-xl</strong>, so each column is about
+        576px wide. Great for big content areas or fewer wide columns.
+      </p>
+      <p class="bg-green-200 p-2">Second block of content</p>
+      <p class="bg-yellow-200 p-2">Third block of content</p>
+      <p class="bg-pink-200 p-2">Fourth block of content</p>
+    </div>
+  </body>
+</html>

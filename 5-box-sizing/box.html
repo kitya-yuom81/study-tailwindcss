@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind box-sizing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-10">
+    <h1 class="text-2xl font-bold mb-6">Tailwind CSS: box-sizing</h1>
+
+    <div class="flex gap-8">
+      <!-- box-border -->
+      <div class="w-40 p-4 border-4 border-blue-700 bg-blue-200 box-border">
+        <h2 class="text-lg font-semibold mb-2">box-border</h2>
+        <p class="text-sm">
+          <strong>box-sizing: border-box</strong><br />
+          Padding and border are inside the width (160px total).
+        </p>
+      </div>
+
+      <!-- box-content -->
+      <div class="w-40 p-4 border-4 border-green-700 bg-green-200 box-content">
+        <h2 class="text-lg font-semibold mb-2">box-content</h2>
+        <p class="text-sm">
+          <strong>box-sizing: content-box</strong><br />
+          Padding and border are added outside the width (total > 160px).
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+<!--
+box-border
++-----------------------------+   ◀ 160px total width (from w-40)
+|        🔲 Border            |   ◀ 4px border (INCLUDED in 160px)
+|   +---------------------+   |
+|   |     🧩 Padding       |   ◀ 16px padding (INCLUDED in 160px)
+|   |   +-------------+   |   |
+|   |   |  📄 Content  |   |   ◀ This is what's left (about 120px wide)
+|   |   +-------------+   |   |
+|   +---------------------+   |
++-----------------------------+
+
+box-content
++-----------------------------+   ◀ >160px total width (overflowing)
+|        🔲 Border            |   ◀ 4px border (added outside)
+|   +---------------------+   |
+|   |     🧩 Padding       |   ◀ 16px padding (added outside)
+|   |   +-------------+   |   |
+|   |   |  📄 Content  |   |   ◀ Exactly 160px (from w-40)
+|   |   +-------------+   |   |
+|   +---------------------+   |
++-----------------------------+
+
+
+
+-->
