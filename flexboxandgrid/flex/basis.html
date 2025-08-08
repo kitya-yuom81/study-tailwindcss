@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Flex Basis Examples</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 space-y-10 bg-gray-50 font-sans">
+
+  <!-- 🟦 1. Fraction Based (1/3 and 2/3) -->
+  <div>
+    <h2 class="text-xl font-bold mb-2">basis-1/3 and basis-2/3</h2>
+    <div class="flex gap-4 bg-gray-200 p-4 rounded">
+      <div class="basis-1/3 bg-blue-500 text-white text-center p-4 rounded">1/3</div>
+      <div class="basis-2/3 bg-green-500 text-white text-center p-4 rounded">2/3</div>
+    </div>
+  </div>
+
+  <!-- 📏 2. Fixed width using spacing scale (basis-20 and basis-40) -->
+  <div>
+    <h2 class="text-xl font-bold mb-2">basis-20 (80px) and basis-40 (160px)</h2>
+    <div class="flex gap-4 bg-gray-200 p-4 rounded">
+      <div class="basis-20 bg-blue-500 text-white text-center p-4 rounded">80px</div>
+      <div class="basis-40 bg-green-500 text-white text-center p-4 rounded">160px</div>
+    </div>
+  </div>
+
+  <!-- 🧠 3. Auto and Full -->
+  <div>
+    <h2 class="text-xl font-bold mb-2">basis-auto and basis-full</h2>
+    <div class="flex gap-4 bg-gray-200 p-4 rounded">
+      <div class="basis-auto bg-blue-500 text-white text-center p-4 rounded">Auto Width</div>
+      <div class="basis-full bg-green-500 text-white text-center p-4 rounded">Full Width</div>
+    </div>
+  </div>
+
+  <!-- 🔧 4. Custom Value -->
+  <div>
+    <h2 class="text-xl font-bold mb-2">basis-[300px] and basis-[50%]</h2>
+    <div class="flex gap-4 bg-gray-200 p-4 rounded">
+      <div class="basis-[300px] bg-blue-500 text-white text-center p-4 rounded">300px</div>
+      <div class="basis-[50%] bg-green-500 text-white text-center p-4 rounded">50%</div>
+    </div>
+  </div>
+
+  <!-- 🖼️ 5. Responsive Preset Sizes (basis-md and basis-lg) -->
+  <div>
+    <h2 class="text-xl font-bold mb-2">basis-md (28rem) and basis-lg (32rem)</h2>
+    <div class="flex gap-4 bg-gray-200 p-4 rounded overflow-auto">
+      <div class="basis-md bg-blue-500 text-white text-center p-4 rounded">28rem</div>
+      <div class="basis-lg bg-green-500 text-white text-center p-4 rounded">32rem</div>
+    </div>
+  </div>
+
+</body>
+</html>

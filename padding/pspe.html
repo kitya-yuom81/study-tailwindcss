@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ps & pe vs pl & pr Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-100 space-y-8">
+
+  <!-- PS & PE in LTR -->
+  <section dir="ltr">
+    <h2 class="text-lg font-bold mb-2">LTR with ps & pe</h2>
+    <div class="flex border border-black">
+      <div class="bg-red-300 w-8"></div> <!-- ps -->
+      <div class="flex-1 bg-white ps-8 pe-4">Content</div>
+      <div class="bg-blue-300 w-4"></div> <!-- pe -->
+    </div>
+  </section>
+
+  <!-- PS & PE in RTL -->
+  <section dir="rtl">
+    <h2 class="text-lg font-bold mb-2">RTL with ps & pe</h2>
+    <div class="flex border border-black">
+      <div class="bg-red-300 w-8"></div> <!-- ps -->
+      <div class="flex-1 bg-white ps-8 pe-4">المحتوى</div>
+      <div class="bg-blue-300 w-4"></div> <!-- pe -->
+    </div>
+  </section>
+
+  <!-- PL & PR in LTR -->
+  <section dir="ltr">
+    <h2 class="text-lg font-bold mb-2">LTR with pl & pr</h2>
+    <div class="flex border border-black">
+      <div class="bg-red-300 w-8"></div> <!-- pl -->
+      <div class="flex-1 bg-white pl-8 pr-4">Content</div>
+      <div class="bg-blue-300 w-4"></div> <!-- pr -->
+    </div>
+  </section>
+
+  <!-- PL & PR in RTL -->
+  <section dir="rtl">
+    <h2 class="text-lg font-bold mb-2">RTL with pl & pr</h2>
+    <div class="flex border border-black">
+      <div class="bg-red-300 w-8"></div> <!-- pl -->
+      <div class="flex-1 bg-white pl-8 pr-4">المحتوى</div>
+      <div class="bg-blue-300 w-4"></div> <!-- pr -->
+    </div>
+  </section>
+
+</body>
+</html>

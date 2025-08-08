@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind Margin Essentials</title>
+</head>
+<body class="min-h-screen bg-slate-100 p-6">
+  <!-- 1) All sides -->
+  <div class="bg-white p-4 rounded shadow">
+    <div class="bg-blue-200 m-4 p-2">m-4 (all sides)</div>
+  </div>
+
+  <!-- 2) Axis shorthands -->
+  <div class="bg-white p-4 rounded shadow mt-6">
+    <div class="bg-green-200 my-4 p-2">my-4 (top & bottom)</div>
+    <div class="bg-green-200 mx-8 p-2 inline-block">mx-8 (left & right)</div>
+  </div>
+
+  <!-- 3) Single side -->
+  <div class="bg-white p-4 rounded shadow mt-6">
+    <div class="bg-orange-200 mt-6 p-2">mt-6 (top only)</div>
+  </div>
+
+  <!-- 4) Center a fixed-width card -->
+  <div class="bg-white p-4 rounded shadow mt-6">
+    <div class="bg-purple-200 w-64 mx-auto p-2 text-center">w-64 + mx-auto (centered)</div>
+  </div>
+
+  <!-- 5) Negative margin -->
+  <div class="relative bg-white p-4 rounded shadow mt-6">
+    <div class="bg-pink-200 p-2">Normal block</div>
+    <div class="bg-pink-300 p-2 -mt-4">-mt-4 (pulled up)</div>
+  </div>
+
+  <!-- 6) RTL-safe (ms/me) -->
+  <div class="bg-white p-4 rounded shadow mt-6">
+    <div class="bg-teal-200 ms-8 p-2 inline-block">ms-8 (start side; left in LTR)</div>
+    <div class="bg-teal-200 me-8 p-2 inline-block">me-8 (end side; right in LTR)</div>
+    <!-- Simulate RTL by adding dir="rtl" on <html> to see them flip -->
+  </div>
+</body>
+</html>
